@@ -118,6 +118,9 @@ Please check the [contribution
 guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) for
 information on what to include when reporting a bug.
 
+## Changelog since 3.4
+
+ - [Cocoa] Added `glfwSetTrackpadZoomCallback` and `glfwSetTrackpadRotateCallback`
 
 ## Changelog since 3.3.10
 
