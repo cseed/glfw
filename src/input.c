@@ -1048,7 +1048,7 @@ GLFWAPI GLFWtrackpadzoomfun glfwSetTrackpadZoomCallback(GLFWwindow* handle,
     assert(window != NULL);
 
     _GLFW_REQUIRE_INIT_OR_RETURN(NULL);
-    _GLFW_SWAP_POINTERS(window->callbacks.trackpadZoom, cbfun);
+    _GLFW_SWAP(GLFWtrackpadzoomfun, window->callbacks.trackpadZoom, cbfun);
     return cbfun;
 }
 
@@ -1059,7 +1059,7 @@ GLFWAPI GLFWtrackpadzoomfun glfwSetTrackpadRotateCallback(GLFWwindow* handle,
     assert(window != NULL);
 
     _GLFW_REQUIRE_INIT_OR_RETURN(NULL);
-    _GLFW_SWAP_POINTERS(window->callbacks.trackpadRotate, cbfun);
+    _GLFW_SWAP(GLFWtrackpadzoomfun, window->callbacks.trackpadRotate, cbfun);
     return cbfun;
 }
 
